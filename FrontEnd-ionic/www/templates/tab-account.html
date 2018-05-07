@@ -1,0 +1,35 @@
+<ion-view view-title="Account" class="backg">
+  <ion-content>
+    <br/><br/>
+      <div align="center">
+      <div style="width:100%">
+
+    <ion-item>
+      <span style="font-weight:bold">Username:</span>
+      <span>{{username}}</span>
+    </ion-item>
+
+    <ion-item>
+      <span style="font-weight:bold">Email:</span>
+      <span>{{email}}</span>
+    </ion-item>
+
+    <ion-item>
+      <span style="font-weight:bold">Score</span>
+      <span>{{score}}</span>
+    </ion-item>
+
+    <br/><br/><br/>
+
+    <ion-item href="#/tab/account/{{username}}" item-icon-right>
+       <span style="font-weight:bold">Edit Password</span>
+       <i style="float:right" class="icon ion-chevron-right icon-accessory"></i>
+    </ion-item>
+
+
+      <br/><br/>
+      <ion-item ng-click="logout()" style="color:red">Logout</ion-item>
+    </div>
+    </div>
+  </ion-content>
+</ion-view>

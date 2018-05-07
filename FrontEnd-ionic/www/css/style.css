@@ -1,0 +1,119 @@
+body{
+    background: #e1f0f4;
+    /* background: -webkit-gradient(linear, left top, left bottom, from(#e1f0f4), to(#a9e2f2)) fixed; */
+    font-family:georgia;
+    height=100%;
+
+    }
+
+.backg{
+
+  background-image: url("map3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+h2{
+  font:sans-serif;
+  color: brown;
+}
+
+
+
+
+/* input.ng-invalid {
+  border-style: solid;
+  border-width: medium;
+  border-color: red;
+} */
+
+
+
+input[type=password], input[type=text], input[type=email], select  {
+    background-color: #f7f9e0;
+    color: black;
+    border-radius: 3px;
+}
+
+input[type=submit], input[type=button], button {
+    background-color: #e0ddd5;
+    color: black;
+    font: georgia;
+    border-radius: 8px;
+    /* border-width: 1px;
+    border-color: #999999;
+    border-style: inset; */
+    font-weight: bold;
+}
+
+input[type=submit]:hover, input[type=button]:hover, button:hover {
+    box-shadow:  3px 3px 5px #888888;
+}
+
+
+.header {
+    position: fixed;
+    overflow: hidden;
+    border-style:inset;
+    border-color: #41823a;
+    background: #538A62;
+    width:100%;
+    height:40px;
+    margin: 0;
+    top: 0;
+    left: 0;
+    margin-right: 50px;
+    align-content: center;
+    font-size: 14px;
+    }
+
+.headerButton {
+    float:right;
+    background: #4e825b;
+    border-left: 3px solid #707772;
+    padding: 7px;
+    height:100%;
+    text-decoration: none;
+    line-height: 30px;
+    text-decoration:none;
+    color:black;
+}
+
+.headerButton:hover {
+    background: #4b9943;
+}
+
+.headerText {
+    float:right;
+    line-height: 40px;
+    font-weight: bold;
+
+}
+
+.error {
+  color:red;
+  font-weight: bold;
+  font-size: 12px;
+
+}
+
+#leaderboardTbl{
+  width:100%;
+  margin:5px;
+  background-color:#ede9dc;
+  text-align: center;
+  border:1px solid #e0dcd0;
+  border-collapse:separate;
+
+}
+
+.leaderboardRow {
+  border:1px solid #909391;
+
+}
+
+.leaderboardRow:hover {
+  background-color:#c9c6bd;
+}

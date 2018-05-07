@@ -1,0 +1,29 @@
+<ion-view view-title="Leaderboard" class="backg">
+  <ion-content class="padding">
+
+    <br/>
+
+    <div align="center">
+
+        <table id="leaderboardTbl" align="center" valign="center">
+          <thead style="background-color:#c9c6bd; font-weight:bold">
+                 <th >Rank</th>
+                 <th >Name</th>
+                 <th >Score</th>
+
+            </thead>
+
+          <tbody ng-repeat="player in ranks">
+
+          <tr class="leaderboardRow">
+            <td>{{$index + 1}}</td>
+            <td>{{player.username}}</td>
+            <td>{{player.score}}</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+  </ion-content>
+</ion-view>

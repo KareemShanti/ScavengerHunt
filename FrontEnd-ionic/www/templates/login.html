@@ -1,0 +1,38 @@
+
+    <ion-content class="backg">
+
+      <br/><br/>
+      <div align="center">
+       <br/><br/>
+       <h2> Scavenger Hunt</h2>
+
+          <br/><br/>
+
+      <form name="loginForm" ng-submit="validate(loginForm)" novalidate>
+        Username:
+        <input ng-class="{errorinput: submitted && loginForm.username.$invalid}" name="username" ng-model="toSend.username"  type="text" required >
+        <span class="error" ng-show="submitted && loginForm.username.$invalid">*Please provide a username</span>
+        <br/><br/>
+        Password:
+        <input ng-class="{errorinput: submitted && loginForm.pass.$invalid }" name="pass" ng-model="toSend.password"  type="password" required>
+        <span class="error" ng-show="submitted && loginForm.pass.$invalid">*Please provide a password </span>
+        <br/><br/>
+
+        <input type="submit" value="Login">
+
+        <br/><br/>
+
+        <span class="error" id="errorMsg">{{err}}</span>
+        <br/><br/>
+
+
+       </form>
+
+          <p align="right">New User?
+      <span style="color:brown; text-decoration: underline;" ng-click="goToSignUp()">Sign Up!</span>
+      </p>
+
+
+      </div>
+
+  </ion-content>

@@ -1,0 +1,12 @@
+<ion-view view-title="Hunts" class="backg">
+  <ion-content class="padding">
+
+
+      <ion-list >
+            <ion-item ng-repeat="hunt in hunts" type="item-text-wrap" href="#/tab/hunts/{{hunt.objectName}}">
+                  {{hunt.objectName}}
+            </ion-item>
+        </ion-list>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,45 @@
+
+<ion-content class="backg">
+
+      <br/><br/>
+      <div align="center">
+       <br/><br/>
+       <h2> Scavenger Hunt</h2>
+
+
+          <br/><br/>
+
+      <form name="signUpForm" ng-submit="signUp(signUpForm)" novalidate>
+        Email:
+        <input ng-class="{errorinput: submitted && signUpForm.email.$invalid}" name="email" ng-model="toSend.email" ng-pattern="/^([0-9a-zA-Z]([-\.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$/"  type="text" required >
+        <span class="error" ng-show="submitted && signUpForm.email.$invalid">*Please provide a valid email</span>
+        <br/><br/>
+
+        Username:
+        <input ng-class="{errorinput: submitted && signUpForm.username.$invalid }" name="username" ng-model="toSend.username"  type="text" required>
+        <span class="error" ng-show="submitted && signUpForm.username.$invalid">*Please provide a username </span>
+        <br/><br/>
+
+        Password:
+        <input ng-class="{errorinput: submitted && signUpForm.pass.$invalid }" name="pass" ng-model="toSend.password"  type="password" required>
+        <span class="error" ng-show="submitted && signUpForm.pass.$invalid">*Please provide a password </span>
+        <br/><br/>
+
+        Confirm Password:
+        <input ng-class="{errorinput: submitted && signUpForm.pass2.$invalid }" name="pass2" ng-model="toSend.passwordConfirm"  type="password" required>
+        <span class="error" ng-show="submitted && signUpForm.pass2.$invalid">*Please provide a password </span>
+        <br/><br/>
+
+        <input type="submit" value="Sign Up">
+
+        <br/><br/>
+
+        <span class="error" id="errorMsg">{{err}}</span>
+        <br/><br/>
+
+
+       </form>
+
+      </div>
+
+  </ion-content>
