@@ -441,7 +441,8 @@ angular.module('starter.services', [])
     console.log(log);
     bluetoothPlugin.stopRangingBeaconsInRegion(BeaconRegions[result.region.identifier]);
   };
-
+  //Find beacon and broadcast it
+  //Listener in huntService
   delegate.didRangeBeaconsInRegion = function (result) {
     var log = ">>>|| RANGE DEBUG ||<<< ID: " + result.region.identifier + ' Beacons: ' + result.beacons[0].minor;
     console.log(log);
